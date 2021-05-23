@@ -7,10 +7,9 @@ export class Recommendation extends Component {
 
     render() {
         return (
-                <tr>
-                    <td>{ this.props.title }</td>
-                    <td><a href={ this.props.link } target="_blank">Zum Anschauen</a></td>
-                </tr> 
+            <div>
+                <p><a href={this.props.link} target="_blank">{this.props.title}</a></p>
+            </div>
         )
     }
 }
